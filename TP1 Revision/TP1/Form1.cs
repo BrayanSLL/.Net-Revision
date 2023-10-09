@@ -147,5 +147,71 @@ namespace TP1
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Code qui va afficher les sous-dossiers/fichiers sous forme de liste
+            listView1.View = View.List;
+        
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Code qui va afficher les icones en petit
+            listView1.View = View.SmallIcon;
+        
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // code qui va afficher les icones en grand
+            listView1.View = View.LargeIcon;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (listView1.SelectedItems.Count > 0) // Si un fichier est sélectionné
+                {
+                    String sPath = treeView1.SelectedNode.Tag.ToString(); // Chemin complet du fichier
+                    sPath += "\\" + listView1.SelectedItems[0].Text; // Ajout du nom du fichier au chemin complet + nom du fichier sélectionné
+                    textBox1.Text = sPath; // Affichage du chemin complet dans la TextBox
+
+                    FileInfo fi = new FileInfo(sPath); // Création d'un objet de type FileInfo qui va contenir les informations du fichier sélectionné
+                    textBox3.Text = fi.LastWriteTime.ToString("dd/MM/YYYY hh:mm"); // Affichage de la date de dernière modification du fichier dans la TextBox
+                    double dSize = fi.Length; // Taille du fichier
+
+                    if(dSize<1024){
+                        textBox2.Text = dSize.ToString("0.00") + " octets"; // Affichage de la taille du fichier dans la TextBox
+                    }else{
+                        dSize = dSize / 1024;
+                        if (dSize < 1024)
+                        {
+                            textBox2.Text = dSize.ToString("0.00") + " Ko"; // Affichage de la taille du fichier dans la TextBox
+                        }
+                        else
+                        {
+                            dSize = dSize / 1024;
+                            if (dSize < 1024)
+                            {
+                                textBox2.Text = dSize.ToString("0.00") + " Mo"; // Affichage de la taille du fichier dans la TextBox
+                            }
+                            else
+                            {
+                                dSize = dSize / 1024;
+                                textBox2.Text = dSize.ToString("0.00") + " Go"; // Affichage de la taille du fichier dans la TextBox
+                            }
+                        }  
+                    }
+                }
+            }
+            catch{ }
+        }
     }
     }
