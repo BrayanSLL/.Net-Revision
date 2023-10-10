@@ -1,0 +1,11 @@
+F:\Cours 3il\DotNet\Tp 2\Tp 2\bin\Debug\Tp 2.exe.config
+F:\Cours 3il\DotNet\Tp 2\Tp 2\bin\Debug\Tp 2.exe
+F:\Cours 3il\DotNet\Tp 2\Tp 2\bin\Debug\Tp 2.pdb
+F:\Cours 3il\DotNet\Tp 2\Tp 2\obj\Debug\Tp 2.csproj.AssemblyReference.cache
+F:\Cours 3il\DotNet\Tp 2\Tp 2\obj\Debug\Tp 2.csproj.SuggestedBindingRedirects.cache
+F:\Cours 3il\DotNet\Tp 2\Tp 2\obj\Debug\Tp_2.Form1.resources
+F:\Cours 3il\DotNet\Tp 2\Tp 2\obj\Debug\Tp_2.Properties.Resources.resources
+F:\Cours 3il\DotNet\Tp 2\Tp 2\obj\Debug\Tp 2.csproj.GenerateResource.cache
+F:\Cours 3il\DotNet\Tp 2\Tp 2\obj\Debug\Tp 2.csproj.CoreCompileInputs.cache
+F:\Cours 3il\DotNet\Tp 2\Tp 2\obj\Debug\Tp 2.exe
+F:\Cours 3il\DotNet\Tp 2\Tp 2\obj\Debug\Tp 2.pdb
