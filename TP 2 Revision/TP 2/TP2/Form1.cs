@@ -27,13 +27,13 @@ namespace TP2
 
         private void button1_Click(object sender, EventArgs e)
         {
-                WSMeteo.meteo3ilSoapClient service = new WSMeteo.meteo3ilSoapClient("meteo3ilSoap"); //Instanciation du service
-                String sDate =""; //Déclaration des variables
-                String sDesc =""; //Déclaration des variables
-                String sTemp =  service.Get_Value(1, out sDate, out sDesc); //Appel de la méthode Get_Value
-                textBox1.Text = "Temperature : " + sTemp+"°C "; //Affichage de la température
-                textBox1.Text += "\r\nDate : " + sDate; //Affichage de la date 
-                textBox1.Text += "\r\nDescription : " + sDesc; //Affichage de la description
+            WSMeteo.meteo3ilSoapClient service = new WSMeteo.meteo3ilSoapClient("meteo3ilSoap"); //Instanciation du service
+            String sDate =""; //Déclaration des variables
+            String sDesc =""; //Déclaration des variables
+            String sTemp =  service.Get_Value(1, out sDate, out sDesc); //Appel de la méthode Get_Value
+            textBox1.Text = "Temperature : " + sTemp+"°C "; //Affichage de la température
+            textBox1.Text += "\r\nDate : " + sDate; //Affichage de la date 
+            textBox1.Text += "\r\nDescription : " + sDesc; //Affichage de la description
 
         }
 

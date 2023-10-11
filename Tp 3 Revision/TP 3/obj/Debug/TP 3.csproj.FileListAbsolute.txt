@@ -1,0 +1,16 @@
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\TP 3.csproj.AssemblyReference.cache
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\TP 3.csproj.SuggestedBindingRedirects.cache
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\MainWindow.g.cs
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\App.g.cs
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\TP 3_MarkupCompile.cache
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\TP 3_MarkupCompile.lref
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\bin\Debug\TP 3.exe.config
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\bin\Debug\TP 3.exe
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\bin\Debug\TP 3.pdb
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\MainWindow.baml
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\TP 3.g.resources
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\TP_3.Properties.Resources.resources
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\TP 3.csproj.GenerateResource.cache
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\TP 3.csproj.CoreCompileInputs.cache
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\TP 3.exe
+C:\Users\braya\OneDrive\Bureau\3il 2023-2024\.Net\Revision .NET\.Net-Revision\Tp 3 Revision\TP 3\obj\Debug\TP 3.pdb
