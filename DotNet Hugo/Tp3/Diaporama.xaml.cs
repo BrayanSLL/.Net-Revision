@@ -18,62 +18,62 @@ namespace Tp3
     /// <summary>
     /// Logique d'interaction pour Diaporama.xaml
     /// </summary>
-    public partial class Diaporama : Window
+    public partial class Diaporama : Window // Diaporama
     {
-        public Diaporama()
+        public Diaporama() 
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
         
-        public List<String> sDiapo = new List<String>();
+        public List<String> sDiapo = new List<String>(); // Liste des images du diaporama
 
-        private int currentImage;
+        private int currentImage; // Image courante
 
-        private void Window_Activated(object sender, EventArgs e)
+        private void Window_Activated(object sender, EventArgs e) // Lorsque la fenêtre est activée
         {
-            if(sDiapo.Count > 0)
+            if(sDiapo.Count > 0) // Si la liste contient des images
             {
-                ImageSourceConverter s = new ImageSourceConverter();
-                Image1.Source = (ImageSource)s.ConvertFromString(sDiapo[1]);
-                Image1.Source = (ImageSource)s.ConvertFromString(sDiapo[0]);
-                currentImage = 1;
+                ImageSourceConverter s = new ImageSourceConverter(); // Convertisseur d'image
+                Image1.Source = (ImageSource)s.ConvertFromString(sDiapo[1]); // On affiche la première image
+                Image1.Source = (ImageSource)s.ConvertFromString(sDiapo[0]); // On affiche la deuxième image
+                currentImage = 1; // On initialise l'image courante
             }
         }
 
-        private void VisibleToInvisible_Completed(object sender, EventArgs e)
+        private void VisibleToInvisible_Completed(object sender, EventArgs e) // Lorsque l'image devient invisible
         {
-            Storyboard sb = (Storyboard)this.FindResource("InvisibleToVisible");
-            sb.Begin();
+            Storyboard sb = (Storyboard)this.FindResource("InvisibleToVisible"); // On récupère l'animation
+            sb.Begin(); // On l'a lance
 
-            if (currentImage >= sDiapo.Count)
+            if (currentImage >= sDiapo.Count) // Si on est à la fin de la liste
             {
-                currentImage = 0;
+                currentImage = 0; // On revient au début
             }
-            else
+            else // Sinon
             {
-                currentImage++;
+                currentImage++; // On passe à l'image suivante
             }
 
-            ImageSourceConverter s = new ImageSourceConverter();
-            Image2.Source = (ImageSource)s.ConvertFromString(sDiapo[currentImage]);
+            ImageSourceConverter s = new ImageSourceConverter(); // Convertisseur d'image
+            Image2.Source = (ImageSource)s.ConvertFromString(sDiapo[currentImage]); // On affiche l'image suivante
 
         }
 
-        private void InvisibleToVisible_Completed(object sender, EventArgs e)
+        private void InvisibleToVisible_Completed(object sender, EventArgs e) // Lorsque l'image devient visible
         {
-            if(currentImage >= sDiapo.Count)
+            if(currentImage >= sDiapo.Count) // Si on est à la fin de la liste
             {
-                currentImage= 0;
+                currentImage= 0; // On revient au début
             } else
             {
-                currentImage++ ;
+                currentImage++ ; // On passe à l'image suivante
             }
 
-            ImageSourceConverter s = new ImageSourceConverter();
-            Image1.Source = (ImageSource)s.ConvertFromString(sDiapo[currentImage]);
+            ImageSourceConverter s = new ImageSourceConverter(); // Convertisseur d'image
+            Image1.Source = (ImageSource)s.ConvertFromString(sDiapo[currentImage]); // On affiche l'image suivante
 
-            Storyboard sb = (Storyboard)this.FindResource("VisibleToInvisible");
-            sb.Begin();
+            Storyboard sb = (Storyboard)this.FindResource("VisibleToInvisible"); // On récupère l'animation
+            sb.Begin(); // On l'a lance
 
         }
     }
