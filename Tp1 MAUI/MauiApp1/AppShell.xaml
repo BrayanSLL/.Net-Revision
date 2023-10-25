@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp1"
+    xmlns:views="clr-namespace:MauiApp1.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent Title="Notes" ContentTemplate="{DataTemplate local:MainPage}" Icon="icon_notes" />
+        <ShellContent Title="A Propos" ContentTemplate="{DataTemplate local:APropos}" Icon="icon_about" />
+        <ShellContent Title="Informations" ContentTemplate="{DataTemplate views:vPhone}" Icon="icon_info" />
+        <ShellContent Title="Géo" ContentTemplate="{DataTemplate views:vGeolocalisation}" Icon="icon_info" />
+        <ShellContent Title="Ecran" ContentTemplate="{DataTemplate views:vEcran}" Icon="icon_info" />
+    </TabBar>
+
+</Shell>
